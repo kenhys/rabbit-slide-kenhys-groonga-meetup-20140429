@@ -74,15 +74,15 @@ TODO:
 * Debian 8 (jessie)
 * Debian unstable (sid)
 
-= Groonga on Ubuntu (1)
+= Groonga on Ubuntu(1)
 
 * Ubuntu 12.04 (Precise)
 * Ubuntu 12.10 (Quantal)
-  * 明日でサポート終了
+  * 明日でサポート終了 4.0.1まで
 * Ubuntu 13.04 (Raring)
   * もうサポート終了 3.1.2まで
 
-= Groonga on Ubuntu (2)
+= Groonga on Ubuntu(2)
 
 * Ubuntu 13.10 (Saucy)
   * 7月にサポート終了
@@ -96,14 +96,14 @@ TODO:
 * CentOS 6
   * no TokenFriso
 
-= Groonga on Fedora (1)
+= Groonga on Fedora(1)
 
 * Fedora 20
   * no TokenFriso
   * Groonga公式とFedora公式に違いはない
   * Fedoraでリリースするのはちょっと遅れる(2-3週)
 
-= Groonga on Fedora (2)
+= Groonga on Fedora(2)
 
   * リリース短縮にはKarmaが必要
 
@@ -120,7 +120,7 @@ TODO:
 
   https://admin.fedoraproject.org/updates/
 
-= FedoraでKarmaを稼ぐ (1)
+= FedoraでKarmaを稼ぐ(1)
 
   * (('tag:x-small'))((*Bohdiにログイン*))
   * (('tag:x-small'))メニューのTestingを選択
@@ -129,14 +129,14 @@ TODO:
 
   https://admin.fedoraproject.org/updates/
 
-= FedoraでKarmaを稼ぐ (2)
+= FedoraでKarmaを稼ぐ(2)
 
   * (('tag:x-small'))Bohdiにログイン
   * (('tag:x-small'))((*メニューのTestingを選択*))
   * (('tag:x-small'))Groongaパッケージを選択
   * (('tag:x-small'))works for meコメントを追加
 
-= FedoraでKarmaを稼ぐ
+= FedoraでKarmaを稼ぐ(2)
 
   * Testingって？
 
@@ -144,27 +144,28 @@ TODO:
   # src = images/bohdi-select-menu.png
   # relative_height = 100
 
-= FedoraでKarmaを稼ぐ (3)
+= FedoraでKarmaを稼ぐ(3)
 
   * (('tag:x-small'))Bohdiにログイン
   * (('tag:x-small'))メニューのTestingを選択
   * (('tag:x-small'))((*Groongaパッケージを選択*))
   * (('tag:x-small'))works for meコメントを追加
 
-= FedoraでKarmaを稼ぐ (4)
+= FedoraでKarmaを稼ぐ(4)
 
   * (('tag:x-small'))Bohdiにログイン
   * (('tag:x-small'))メニューのTestingを選択
   * (('tag:x-small'))Groongaパッケージを選択
   * (('tag:x-small'))((*works for meコメントを追加*))
 
-= FedoraでKarmaを稼ぐ
+= FedoraでKarmaを稼ぐ(4)
 
   * works for meコメントって?
+    * これを送信するとKarma +1
 
   # image
   # src = images/bohdi-works-for-me.png
-  # relative_height = 80
+  # relative_height = 100
 
 = Mroongaの特長
 
@@ -185,16 +186,16 @@ TODO:
   * Debian 8 (jessie)
   * Debian unstable (sid)
 
-= Mroonga on Ubuntu (1)
+= Mroonga on Ubuntu(1)
 
 * MySQL 5.5系
   * Ubuntu 12.04 (Precise)
   * Ubuntu 12.10 (Quantal)
-    * 明日でサポート終了
+    * 明日でサポート終了 4.01まで
   * Ubuntu 13.04 (Raring)
     * もうサポート終了 3.12まで
 
-= Mroonga on Ubuntu (2)
+= Mroonga on Ubuntu(2)
 
 * MySQL 5.5系
   * Ubuntu 13.10 (Saucy)
