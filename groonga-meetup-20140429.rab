@@ -39,9 +39,26 @@ TODO:
 
 TODO:
 
-= Groongaの特長
+= Groongaの特長(1)
 
-TODO: 
+* 全文検索と即時更新
+  * 参照ロックフリー
+    * 更新しつつ検索OK
+* カラムストアを採用
+  * 集計クエリを高速に処理可能
+
+= Groongaの特長(2)
+
+* 豊富なトークナイザー
+  * 検索漏れないことを重視しますか？
+  * 検索精度を重視しますか？
+* 位置情報検索のサポート
+
+= Groongaの特長(3)
+
+* アプリケーションへの組込み
+  * ライブラリとして活用可能
+  * 実はバックエンドでGroongaが動いていることも
 
 = Groongaとパッケージ
 
@@ -91,26 +108,63 @@ TODO:
   * リリース短縮にはKarmaが必要
 
   # image
-  # src = bohdi-what-is-karma.png
+  # src = images/bohdi-what-is-karma.png
   # relative_height = 100
+
+= FedoraでKarmaを稼ぐ
+
+  * (('tag:x-small'))Bohdiにログイン
+  * (('tag:x-small'))メニューのTestingを選択
+  * (('tag:x-small'))Groongaパッケージを選択
+  * (('tag:x-small'))works for meコメントを追加
+
+  https://admin.fedoraproject.org/updates/
 
 = FedoraでKarmaを稼ぐ (1)
 
-  * Bohdiにログイン
-  * メニューのTestingを選択
-  * Groongaパッケージを選択
+  * (('tag:x-small'))((*Bohdiにログイン*))
+  * (('tag:x-small'))メニューのTestingを選択
+  * (('tag:x-small'))Groongaパッケージを選択
+  * (('tag:x-small'))works for meコメントを追加
 
   https://admin.fedoraproject.org/updates/
 
 = FedoraでKarmaを稼ぐ (2)
 
-  * works for meコメントを追加
+  * (('tag:x-small'))Bohdiにログイン
+  * (('tag:x-small'))((*メニューのTestingを選択*))
+  * (('tag:x-small'))Groongaパッケージを選択
+  * (('tag:x-small'))works for meコメントを追加
+
+= FedoraでKarmaを稼ぐ
+
+  * Testingって？
 
   # image
-  # src = bohdi-works-for-me.png
-  # relative_height = 80
+  # src = images/bohdi-select-menu.png
+  # relative_height = 100
 
-  https://admin.fedoraproject.org/updates/
+= FedoraでKarmaを稼ぐ (3)
+
+  * (('tag:x-small'))Bohdiにログイン
+  * (('tag:x-small'))メニューのTestingを選択
+  * (('tag:x-small'))((*Groongaパッケージを選択*))
+  * (('tag:x-small'))works for meコメントを追加
+
+= FedoraでKarmaを稼ぐ (4)
+
+  * (('tag:x-small'))Bohdiにログイン
+  * (('tag:x-small'))メニューのTestingを選択
+  * (('tag:x-small'))Groongaパッケージを選択
+  * (('tag:x-small'))((*works for meコメントを追加*))
+
+= FedoraでKarmaを稼ぐ
+
+  * works for meコメントって?
+
+  # image
+  # src = images/bohdi-works-for-me.png
+  # relative_height = 80
 
 = Mroongaの特長
 
