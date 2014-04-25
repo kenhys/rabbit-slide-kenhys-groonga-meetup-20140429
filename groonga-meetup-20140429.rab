@@ -229,7 +229,92 @@ TODO:
   * Fedora公式リポジトリでは未リリース
     * Mroonga含めてインストールしたいならGroongaリポジトリを登録する
 
+= 環境構築してみよう
+
+* Groongaのインストール
+* Mroongaのインストール
+
+= (('tag:x-small'))どれをインストールしたらいい？(1)
+
+* groonga
+  * ちょっとお試しで使うならコレ
+  * コマンドラインで使うだけ
+  * いろいろ指定すればサーバーとしても利用可
+
+= (('tag:x-small'))どれをインストールしたらいい？(2)
+
+* groonga-server-http
+  * サーバー立てるならコレ
+* groonga-server-gqtp
+  * 特に理由がなければスルー
+
+= (('tag:x-small'))どれをインストールしたらいい？(3)
+
+* groonga-httpd
+  * 不満がでてきたらコレ
+  * POSTしたいならコレ一択
+
+= (('tag:x-small'))どれをインストールしたらいい？(3)
+
+* ((*groonga-httpd*))
+  * 不満がでてきたらコレ
+  * POSTしたいならコレ一択
+
+= Install Groonga(1)
+
+(('&#x23F3;'))(('tag:x-small'))Groongaをインストールしてみましょう
+
+  Debian系% sudo apt-get install groonga-httpd
+
+  Red Hat系% sudo yum install groonga-httpd
+
+(('tag:center'))(('tag:x-small'))http://groonga.org/ja/docs/install.html
+
+= Install Groonga(2)
+
+(('&#x23F3;'))(('tag:x-small'))トークナイザーやノーマライザーをインストールしてみましょう
+
+  Debian系% sudo apt-get install groonga-tokenizer-mecab groonga-normalizer-mysql
+  
+  Red Hat系% sudo yum install groonga-tokenizer-mecab groonga-normalizer-mysql
+
+(('tag:center'))(('tag:x-small'))http://groonga.org/ja/docs/install.html
+
+= Install Groonga(3)
+
+(('&#x23F3;'))(('tag:x-small'))Groongaが起動しているか確認しましょう
+
+  % curl http://localhost:10041/d/status
+
+= Install Groonga(4)
+
+(('&#x23F3;'))(('tag:x-small'))Groongaが起動していない場合は起動しましょう
+
+  % sudo service groonga-httpd start
+
+= Install Mroonga(1)
+
+(('&#x23F3;'))(('tag:x-small'))Mroongaをインストールしてみましょう
+
+  http://mroonga.org/ja/docs/install.html
+
+= Mroongaをインストール
+
+(('&#x23F3;')) インストールガイドをみてMroongaをインストールしてみましょう
+
+  http://mroonga.org/ja/docs/install.html
+
+= 今回の演習の題材
+
+* 駅データ.jp
+  * http://www.ekidata.jp/
+* Wikipediaの記事の一部
+  * (('tag:x-small'))http://ja.wikipedia.org/wiki/Wikipedia:データベースダウンロード
+
+= 題材のダウンロード
+
+* TODO: ダウンロード先を提示
 
 = 感謝
 
-WEICさん\n会場提供\nありがとうございます！
+(('tag:x-small'))WEICさん\n会場提供\nありがとうございます！
