@@ -1,5 +1,6 @@
 
 table_remove Prefs
+table_remove Company
 
 table_create Prefs TABLE_PAT_KEY UInt32
 column_create Prefs name COLUMN_SCALAR ShortText
@@ -7,4 +8,22 @@ column_create Prefs romaji COLUMN_SCALAR ShortText
 column_create Prefs hiragana COLUMN_SCALAR ShortText
 column_create Prefs katanaka COLUMN_SCALAR ShortText
 
+table_create Company TABLE_PAT_KEY UInt32
+column_create Company railway_code COLUMN_SCALAR UInt32
+column_create Company name COLUMN_SCALAR ShortText
+column_create Company romaji COLUMN_SCALAR ShortText
+column_create Company hiragana COLUMN_SCALAR ShortText
+column_create Company katanaka COLUMN_SCALAR ShortText
+column_create Company full_name COLUMN_SCALAR ShortText
+column_create Company full_romaji COLUMN_SCALAR ShortText
+column_create Company full_hiragana COLUMN_SCALAR ShortText
+column_create Company full_katanaka COLUMN_SCALAR ShortText
+column_create Company short_name COLUMN_SCALAR ShortText
+column_create Company short_romaji COLUMN_SCALAR ShortText
+column_create Company short_hiragana COLUMN_SCALAR ShortText
+column_create Company short_katanaka COLUMN_SCALAR ShortText
+column_create Company url COLUMN_SCALAR ShortText
+column_create Company type COLUMN_SCALAR UInt32
+column_create Company status COLUMN_SCALAR UInt32
+column_create Company sort COLUMN_SCALAR UInt32
 
