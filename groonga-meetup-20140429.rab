@@ -298,11 +298,11 @@ TODO:
 
   http://mroonga.org/ja/docs/install.html
 
-= Mroongaをインストール
+= Install Mroonga(2)
 
-(('&#x23F3;')) インストールガイドをみてMroongaをインストールしてみましょう
+(('&#x23F3;'))(('tag:x-small'))Mroongaが使えるか確認しましょう
 
-  http://mroonga.org/ja/docs/install.html
+  mysql> show engines;
 
 = 今回の演習の題材
 
