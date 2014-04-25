@@ -3,6 +3,7 @@ table_remove Prefs
 
 table_create Prefs TABLE_PAT_KEY UInt32
 column_create Prefs name COLUMN_SCALAR ShortText
+column_create Prefs romaji COLUMN_SCALAR ShortText
 column_create Prefs hiragana COLUMN_SCALAR ShortText
 column_create Prefs katanaka COLUMN_SCALAR ShortText
 
