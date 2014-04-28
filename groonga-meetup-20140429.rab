@@ -93,9 +93,8 @@
 = Groonga on CentOS
 
 * CentOS 5
-  * no TokenFriso
 * CentOS 6
-  * no TokenFriso
+  * 中国語のトークナイザーは未サポート
 
 = Groonga on Fedora(1)
 
