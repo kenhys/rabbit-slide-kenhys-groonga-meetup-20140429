@@ -365,7 +365,7 @@
   * いろいろあるけど((*TABLE_PAT_KEY*))
   * 長過ぎるキーは禁物
 
-  table_create Users TABLE_PAT_KEY UInt32
+  table_create Users TABLE_PAT_KEY ShortText
 
 = データを追加/更新しよう
 
