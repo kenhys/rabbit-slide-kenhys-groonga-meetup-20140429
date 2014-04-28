@@ -1,0 +1,8 @@
+select Users --output_columns _key,name,age
+
+load --table Users
+[
+{"_key":2, "age":44}
+]
+
+select Users --output_columns _key,name,age
