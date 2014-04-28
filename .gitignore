@@ -1,6 +1,7 @@
 /.tmp/
 /pkg/
 /pdf/
+*.png
 *.db
 *.pdf
 db.*
