@@ -95,6 +95,8 @@
 * CentOS 5
 * CentOS 6
   * 中国語のトークナイザーは未サポート
+* CentOS 7?
+  * まだrcベースらしいのでしばらく先
 
 = Groonga on Fedora(1)
 
