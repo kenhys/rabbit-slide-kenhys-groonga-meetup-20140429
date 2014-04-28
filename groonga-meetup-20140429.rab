@@ -455,18 +455,26 @@
   % 0004-load/load-succeed.sh
 
 = HTTP経由でテーブルを作成する(1)
+
+  % 0005-create-table/create-table.sh
+
 = HTTP経由でカラムを作成する(1)
 
-= HTTPでデータを検索する(1)
+(('&#x23F3;'))HTTP経由でカラムを作成してみましょう
+
+  % 0006-create-column/create-column.sh
 
 = POSTでデータを更新する(1)
 
-(('&#x23F3;'))
+(('&#x23F3;'))POSTでデータをロードしてみましょう
 
-= POSTでデータを更新する(2)
+  % 0007-post-data/post-data.sh
 
-(('&#x23F3;'))
+= HTTPでデータを検索する(1)
 
+(('&#x23F3;'))HTTP経由で検索してみましょう
+
+  % 0008-search-http/search-http.sh
 
 = 管理画面を触ってみよう
 
