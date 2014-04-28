@@ -311,6 +311,33 @@
 
   mysql> show engines;
 
+= Install Mroonga(3)
+
+(('&#x23F3;'))(('tag:x-small'))インストールされているとどうなる？
+
+  mysql> SELECT * FROM mysql.plugin;
+  +---------+---------------+
+  | name    | dl            |
+  +---------+---------------+
+  | mroonga | ha_mroonga.so |
+  +---------+---------------+
+  1 row in set (0.00 sec)
+
+= Install Mroonga(4)
+
+(('&#x23F3;'))(('tag:x-small'))インストールされているとどうなる？
+
+  mysql> SELECT * FROM mysql.func;
+  +--------------------+-----+---------------+----------+
+  | name               | ret | dl            | type     |
+  +--------------------+-----+---------------+----------+
+  | last_insert_grn_id |   2 | ha_mroonga.so | function |
+  | mroonga_snippet    |   0 | ha_mroonga.so | function |
+  | mroonga_command    |   0 | ha_mroonga.so | function |
+  | mroonga_escape     |   0 | ha_mroonga.so | function |
+  +--------------------+-----+---------------+----------+
+  4 rows in set (0.00 sec)
+
 = 今回の演習の題材
 
 * 駅データ.jp
