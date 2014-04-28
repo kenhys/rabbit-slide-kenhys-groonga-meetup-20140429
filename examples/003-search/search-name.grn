@@ -1,0 +1,2 @@
+select Users --output_columns _key,name,age --match_columns name --query '竹中'
+
