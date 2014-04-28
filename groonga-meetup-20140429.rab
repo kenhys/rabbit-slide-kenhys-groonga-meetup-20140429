@@ -454,15 +454,21 @@
   % 0004-load/load-fail.sh
   % 0004-load/load-succeed.sh
 
+= HTTP経由でのリクエストの基本
+
+  http://localhost:10041/d/コマンド名?キー1=値1&キー2=値2....
+
 = HTTP経由でテーブルを作成する(1)
 
-  % 0005-create-table/create-table.sh
+(('&#x23F3;')) % 0005-create-table/create-table.sh
+
+  curl 'http://localhost:10041/d/table_create?name=Users&type=TABLE_PAT_KEY&key_type=ShortText'
 
 = HTTP経由でカラムを作成する(1)
 
-(('&#x23F3;'))HTTP経由でカラムを作成してみましょう
+(('&#x23F3;')) % 0006-create-column/create-column.sh
 
-  % 0006-create-column/create-column.sh
+  curl 'http://localhost:10041/d/column_create?table=Users&name=full_name&flags=COLUMN_SCALAR&type=ShortText'
 
 = POSTでデータを更新する(1)
 
@@ -488,6 +494,8 @@
 = 文字列を正規化してみよう
 
 = クエリ展開してみよう
+
+  % sudo cp 00
 
 = 他のプロダクトを活用してみよう
 
