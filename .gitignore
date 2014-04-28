@@ -2,4 +2,6 @@
 /pkg/
 /pdf/
 *.db
+*.pdf
 db.*
+
