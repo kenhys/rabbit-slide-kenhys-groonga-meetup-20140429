@@ -5,4 +5,4 @@
 *.db
 *.pdf
 db.*
-
+**/testdb/db*
