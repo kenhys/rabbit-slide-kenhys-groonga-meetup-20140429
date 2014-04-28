@@ -1,8 +1,9 @@
 #!/bin/bash
 
-rm -fr testdb
-mkdir -p testdb
+EXAMPLE_DIR=`dirname $(dirname $(readlink -e $0))`
+rm -fr $EXAMPLE_DIR/testdb
+mkdir -p $EXAMPLE_DIR/testdb
 
-groonga -n testdb/db < load-schema.grn
-groonga testdb/db < load-key-value-pair.grn
+groonga -n $EXAMPLE_DIR/testdb/db < load-schema.grn
+groonga $EXAMPLE_DIR/testdb/db < load-key-value-pair.grn
 
