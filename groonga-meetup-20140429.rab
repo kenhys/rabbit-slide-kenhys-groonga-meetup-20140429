@@ -167,10 +167,14 @@
   # src = images/bohdi-works-for-me.png
   # relative_height = 100
 
-= Mroongaの特長
+= Mroongaの特長(1)
 
 * 導入しやすいプラグイン形式
 * 他のストレージエンジンとの連携
+  * ラッパーモード
+
+= Mroongaの特長(2)
+
 * データ更新が多くても検索性能が良い
 * LIKEからの置き換えも比較的容易
 
