@@ -398,6 +398,65 @@
 
   [[0,1398668413.7959,0.00316190719604492],3]
 
+= データをより安全にロードする(3)
+
+(('&#x23F3;'))実際に試してみましょう\n
+(('&#x26A0;'))((*_key:2のageが抜けている*))
+
+  % ./0001-load/load-fail.sh
+  % ./0001-load/load-succeed.sh
+
+  [[0,1398668413.7959,0.00316190719604492],3]
+
+= データを更新してみよう
+
+(('&#x23F3;'))実際に試してみましょう\n
+((*_key:2のageを更新します*))
+
+  % ./0002-update/update-age.sh
+
+= データを検索してみよう
+
+(('&#x23F3;'))実際に試してみましょう\n
+(('&#x26A0;'))((*1件もヒットしない*))
+  % ./0003-search/search-name.sh
+
+= 検索するにはインデックスが必要(1)
+
+(('&#x23F3;'))インデックスを追加してみましょう\n
+
+  % ./0003-search/add-index.sh
+
+= 検索するにはインデックスが必要(2)
+
+(('&#x23F3;'))COLUMN_INDEXを指定するのがポイントです
+
+  table_remove Lexicon
+  table_create Lexicon TABLE_PAT_KEY ShortText --default_tokenizer \
+    TokenBigram --normalizer NormalizerAuto
+  column_create Lexicon name_index COLUMN_INDEX|WITH_SECTION|WITH_POSITION Users name
+  column_create Lexicon sect_index COLUMN_INDEX|WITH_SECTION|WITH_POSITION Users sect
+
+= 検索するにはインデックスが必要(3)
+
+(('&#x23F3;'))再度検索してみましょう\n
+
+  % ./0003-search/search-name.sh
+
+= 検索するにはインデックスが必要(4)
+
+(('&#x23F3;'))インデックスを覗いてみる
+
+  % ./0003-search/dump-lexicon.sh
+
+= データを削除してみよう
+
+  % 0004-load/load-fail.sh
+  % 0004-load/load-succeed.sh
+
+= HTTP経由でテーブルを作成する(1)
+= HTTP経由でカラムを作成する(1)
+
 = HTTPでデータを検索する(1)
 
 = POSTでデータを更新する(1)
