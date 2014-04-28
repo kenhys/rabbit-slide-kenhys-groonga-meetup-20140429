@@ -213,8 +213,8 @@
 = Mroonga on CentOS 5
 
 * CentOS 5
-  * MySQL 5.5対応パッケージ(SCL)
   * 以前はMySQLが古すぎたので、MySQL 5.6対応パッケージを提供
+  * MySQL 5.5(SCL)対応パッケージに以降
 
 = Mroonga on CentOS 6
 
