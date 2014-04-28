@@ -353,7 +353,101 @@
 
 = Groonga編
 
+* よく使うgroongaコマンド
+  * table_create/table_remove
+  * column_create/column_remove
+  * select/load/delete/dump
+
+= テーブルのキーの話
+
+  * いろいろあるけど((*TABLE_PAT_KEY*))
+  * 長過ぎるキーは禁物
+
+  table_create Users TABLE_PAT_KEY UInt32
+
+= データを追加/更新しよう
+
+* 多才なloadコマンド
+  * 追加も更新もこれ一つで
+
+= データをより安全にロードする(1)
+
+  * こうやってロードできるけど
+
+  load Users
+  [
+  ["_key", "column1", "column2", ...
+  ["key1",  "data1", "data2n", ...
+
+= データをより安全にロードする(2)
+
+  * key:valueのペアが安全
+
+  load Users
+  [
+  {"_key": "key1", "column1":"data1", "column2":", ...
+
+= HTTPでデータを検索する(1)
+
+= POSTでデータを更新する(1)
+
+(('&#x23F3;'))
+
+= POSTでデータを更新する(2)
+
+(('&#x23F3;'))
+
+
+= 管理画面を触ってみよう
+
+(('&#x23F3;'))ブラウザで次のURLにアクセスしてください
+
+  http://localhost:10041/
+
+= 位置情報を検索してみよう
+
+= 文字列をトークナイズしてみよう
+= 文字列を正規化してみよう
+
+= クエリ展開してみよう
+
+= 他のプロダクトを活用してみよう
+
+* Rroonga
+* Sewell
+* grnmini
+
+= Rroongaを使ってみる(1)
+
+  Debian系% sudo apt-get install libgroonga-dev
+  Red Hat系% sudo apt-get install groonga-devel
+
+  % gem install rroonga
+
+= Sewellを使ってみる(1)
+
+  % gem install sewell
+
+= Sewellを使ってみる(2)
+
+  % gem install sewell
+
+= GrnMiniを使ってみる(1)
+
+* ongaeshiさん作
+
+= GrnMiniを使ってみる(2)
+
+  % gem install sewell
+
 = Mroonga編
+
+= 
+
+= ラッパーモード/ストレージモード
+
+= mroonga_commandを活用する
+
 
 = 感謝
 
