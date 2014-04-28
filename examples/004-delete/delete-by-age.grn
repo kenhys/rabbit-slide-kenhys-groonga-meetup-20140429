@@ -1,0 +1,5 @@
+select Users --output_columns _key,name,age
+
+delete Users --filter 'age >= 80'
+
+select Users --output_columns _key,name,age

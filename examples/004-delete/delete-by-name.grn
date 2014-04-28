@@ -1,0 +1,5 @@
+select Users --output_columns _key,name,age
+
+delete Users --filter "name == '竹中裕司'"
+
+select Users --output_columns _key,name,age
