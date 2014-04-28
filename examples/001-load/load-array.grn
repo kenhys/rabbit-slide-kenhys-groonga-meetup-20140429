@@ -1,0 +1,7 @@
+load --table Users
+[
+["_key", "name", "hiragana", "email", "age", "sect"]
+[1, "荒井知世", "あらいちせ", "arai_chise@example.com", 80, "左ルー・ナン派"]
+[2, "吹越知世", "ふきこしちせ", "fukikoshi_chise@example.com", "右ルー・混ぜ混ぜ派"]
+[3, "竹中裕司", "たけなかゆうじ", "takenaka_yuuji@example.com", 51, "左ルー・混ぜ混ぜ派"]
+]

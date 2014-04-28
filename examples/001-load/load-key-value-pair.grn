@@ -1,0 +1,6 @@
+load --table Users
+[
+{"_key":1, "name":"荒井知世", "hiragana":"あらいちせ", "email":"arai_chise@example.com", "age":80, "sect":"左ルー・ナン派"}
+{"_key":2, "name":"吹越知世", "hiragana":"ふきこしちせ", "email":"fukikoshi_chise@example.com", "sect":"右ルー・混ぜ混ぜ派"}
+{"_key":3, "name":"竹中裕司", "hiragana":"たけなかゆうじ", "email":"takenaka_yuuji@example.com", "age":51, "sect":"左ルー・混ぜ混ぜ派"}
+]
