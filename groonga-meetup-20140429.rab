@@ -214,13 +214,13 @@
 
 * CentOS 5
   * 以前はMySQLが古すぎたので、MySQL 5.6対応パッケージを提供
-  * MySQL 5.5(SCL)対応パッケージに以降
+  * MySQL 5.5(SCL)対応パッケージに移行
 
 = Mroonga on CentOS 6
 
 * CentOS 6
-  * MySQL 5.5対応パッケージ(SCL)
   * MySQL 5.1しか使えないというのは古い情報です！
+  * MySQL 5.5対応(SCL)パッケージに移行
 
 = Mroonga on CentOS
 
