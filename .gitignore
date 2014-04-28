@@ -1,3 +1,5 @@
 /.tmp/
 /pkg/
 /pdf/
+*.db
+db.*
