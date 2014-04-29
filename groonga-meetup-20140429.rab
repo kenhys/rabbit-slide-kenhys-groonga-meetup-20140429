@@ -344,8 +344,8 @@
 
 * 駅データ.jp
   * http://www.ekidata.jp/
-* Wikipediaの記事の一部
-  * (('tag:x-small'))http://ja.wikipedia.org/wiki/Wikipedia:データベースダウンロード
+#* Wikipediaの記事の一部
+#  * (('tag:x-small'))http://ja.wikipedia.org/wiki/Wikipedia:データベースダウンロード
 
 = 題材のダウンロード
 
@@ -517,34 +517,35 @@
 
   % sudo cp 00
 
-= 他のプロダクトを活用してみよう
-
-* Rroonga
-* Sewell
-* grnmini
-
-= Rroongaを使ってみる(1)
-
-  Debian系% sudo apt-get install libgroonga-dev
-  Red Hat系% sudo apt-get install groonga-devel
-
-  % gem install rroonga
-
-= Sewellを使ってみる(1)
-
-  % gem install sewell
-
-= Sewellを使ってみる(2)
-
-  % gem install sewell
-
-= GrnMiniを使ってみる(1)
-
-* ongaeshiさん作
-
-= GrnMiniを使ってみる(2)
-
-  % gem install sewell
+#= 他のプロダクトを活用してみよう
+#
+#* Rroonga
+#* Sewell
+#* grnmini
+#
+#= Rroongaを使ってみる(1)
+#
+#  Debian系% sudo apt-get install libgroonga-dev
+#  Red Hat系% sudo apt-get install groonga-devel
+#
+#  % gem install rroonga
+#
+#= Sewellを使ってみる(1)
+#
+#  % gem install sewell
+#
+#= Sewellを使ってみる(2)
+#
+#  % gem install sewell
+#
+#= GrnMiniを使ってみる(1)
+#
+#* ongaeshiさん作
+#
+#= GrnMiniを使ってみる(2)
+#
+#  % gem install grnmini
+#
 
 = Mroonga編
 
