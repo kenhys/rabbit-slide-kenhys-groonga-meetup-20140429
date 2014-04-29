@@ -449,10 +449,29 @@
 
   % ./0003-search/dump-lexicon.sh
 
-= データを削除してみよう
+= データを削除してみよう(1)
 
-  % 0004-load/load-fail.sh
-  % 0004-load/load-succeed.sh
+(('&#x23F3;'))キーをもとに削除する
+
+  delete Company 2
+
+  % 0004-delete/delete-by-key.sh
+
+= データを削除してみよう(2)
+
+(('&#x23F3;'))nameカラムの値をもとに削除する
+
+  delete Company --filter "name == 'JR北海道'"
+
+  % 0004-delete/delete-by-name.sh
+
+= データを削除してみよう(3)
+
+(('&#x23F3;'))statusの値をもとに削除する
+
+  delete Company --filter 'status > 0'
+
+  % 0004-delete/delete-by-status.sh
 
 = HTTP経由でのリクエストの基本
 
