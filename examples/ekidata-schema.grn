@@ -27,3 +27,12 @@ column_create Company type COLUMN_SCALAR UInt32
 column_create Company status COLUMN_SCALAR UInt32
 column_create Company sort COLUMN_SCALAR UInt32
 
+table_create Station TABLE_PAT_KEY ShortText
+column_create Station group_cd COLUMN_SCALAR ShortText
+column_create Station line_cd COLUMN_SCALAR ShortText
+column_create Station name COLUMN_SCALAR ShortText
+column_create Station hiragana COLUMN_SCALAR ShortText
+column_create Station katakana COLUMN_SCALAR ShortText
+column_create Station longitude COLUMN_SCALAR ShortText
+column_create Station latitude COLUMN_SCALAR ShortText
+column_create Station location COLUMN_SCALAR WGS84GeoPoint
