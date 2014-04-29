@@ -36,3 +36,6 @@ column_create Station katakana COLUMN_SCALAR ShortText
 column_create Station longitude COLUMN_SCALAR ShortText
 column_create Station latitude COLUMN_SCALAR ShortText
 column_create Station location COLUMN_SCALAR WGS84GeoPoint
+
+table_create Locations TABLE_PAT_KEY WGS84GeoPoint
+column_create Locations station COLUMN_INDEX Station location
