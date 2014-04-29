@@ -1,7 +1,7 @@
-load --table Users
+load --table Company
 [
-["_key", "name", "hiragana", "email", "age", "sect"]
-[1, "荒井知世", "あらいちせ", "arai_chise@example.com", 80, "左ルー・ナン派"]
-[2, "吹越知世", "ふきこしちせ", "fukikoshi_chise@example.com", "右ルー・混ぜ混ぜ派"]
-[3, "竹中裕司", "たけなかゆうじ", "takenaka_yuuji@example.com", 51, "左ルー・混ぜ混ぜ派"]
+["_key", "name", "hiragana", "katakana", "url", "status"],
+[1,"JR北海道","じぇいあーるほっかいどう","ジェイアールホッカイドウ","http://www.jrhokkaido.co.jp/",0],
+[2,"JR東日本","じぇいあーるひがしにほん","ジェイアールヒガシニホン","http://www.jreast.co.jp/",0],
+[3,"JR東海","じぇいあーるとうかい","ジェイアールトウカイ","http://jr-central.co.jp/"]
 ]

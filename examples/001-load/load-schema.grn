@@ -1,8 +1,6 @@
-table_remove Users
-
-table_create Users TABLE_PAT_KEY UInt32
-column_create Users name COLUMN_SCALAR ShortText
-column_create Users hiragana COLUMN_SCALAR ShortText
-column_create Users email COLUMN_SCALAR ShortText
-column_create Users age COLUMN_SCALAR UInt8
-column_create Users sect COLUMN_SCALAR ShortText
+table_create Company TABLE_PAT_KEY UInt32
+column_create Company name COLUMN_SCALAR ShortText
+column_create Company hiragana COLUMN_SCALAR ShortText
+column_create Company katakana COLUMN_SCALAR ShortText
+column_create Company url COLUMN_SCALAR ShortText
+column_create Company status COLUMN_SCALAR UInt8
