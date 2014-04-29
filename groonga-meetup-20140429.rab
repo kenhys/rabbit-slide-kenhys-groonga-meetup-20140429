@@ -481,13 +481,13 @@
 
 (('&#x23F3;')) % 0005-create-table/create-table.sh
 
-  curl 'http://localhost:10041/d/table_create?name=Users&type=TABLE_PAT_KEY&key_type=ShortText'
+  curl 'http://localhost:10041/d/table_create?name=Company&type=TABLE_PAT_KEY&key_type=UInt32'
 
 = HTTP経由でカラムを作成する(1)
 
 (('&#x23F3;')) % 0006-create-column/create-column.sh
 
-  curl 'http://localhost:10041/d/column_create?table=Users&name=full_name&flags=COLUMN_SCALAR&type=ShortText'
+  curl 'http://localhost:10041/d/column_create?table=Company&name=full_name&flags=COLUMN_SCALAR&type=ShortText'
 
 = POSTでデータを更新する(1)
 
