@@ -2,5 +2,5 @@
 
 EXAMPLE_DIR=`dirname $(dirname $(readlink -e $0))`
 
-groonga $EXAMPLE_DIR/testdb/db < update-age.grn
+groonga $EXAMPLE_DIR/testdb/db < update-status.grn
 

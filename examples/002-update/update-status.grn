@@ -1,0 +1,8 @@
+select Company --output_columns _key,name,status
+
+load --table Company
+[
+{"_key":3, "status":1}
+]
+
+select Company --output_columns _key,name,status
