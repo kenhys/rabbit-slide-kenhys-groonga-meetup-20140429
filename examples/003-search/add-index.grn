@@ -1,5 +1,4 @@
 table_remove Lexicon
 table_create Lexicon TABLE_PAT_KEY ShortText --default_tokenizer TokenBigram --normalizer NormalizerAuto
-column_create Lexicon name_index COLUMN_INDEX|WITH_SECTION|WITH_POSITION Users name
-column_create Lexicon sect_index COLUMN_INDEX|WITH_SECTION|WITH_POSITION Users sect
+column_create Lexicon name_index COLUMN_INDEX|WITH_SECTION|WITH_POSITION Company name
 
