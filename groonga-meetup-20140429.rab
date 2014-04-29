@@ -561,8 +561,31 @@
   * 全部Mroongaでがんばる
   * トランザクション何それ？
 
-= mroonga_commandを活用する
+= ストレージモード
 
+  ENGINE=mroonga
+
+= ラッパーモード
+
+  ENGINE=mroonga COMMENT='engine "innodb"'
+  
+= パーサーの指定
+
+  FULLTEXT INDEX (content) COMMENT 'parser "TokenMecab"'
+
+= ノーマライザーの指定
+
+  FULLTEXT INDEX (content) COMMENT 'parser "TokenMecab", normalizer "NormalizerAuto"'
+
+
+= MATCH AGAINSTとBOOLEAN MODE
+
+* QUERY EXPANSION MODE
+  * MySQLにおまかせの類似文書検索
+* BOOLEAN MODE
+  * 明示的に検索を制御
+
+= 位置情報検索
 
 = 感謝
 
