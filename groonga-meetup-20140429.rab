@@ -363,9 +363,9 @@
 = テーブルのキーの話
 
   * いろいろあるけど((*TABLE_PAT_KEY*))
-  * 長過ぎるキーは禁物
+  * 長過ぎるキーは禁物(ShortText)
 
-  table_create Users TABLE_PAT_KEY ShortText
+  table_create Company TABLE_PAT_KEY UInt32
 
 = データを追加/更新しよう
 
@@ -376,7 +376,7 @@
 
   * こうやってロードできるけど
 
-  load Users
+  load --table Company
   [
   ["_key", "column1", "column2", ...
   ["key1",  "data1", "data2", ...
@@ -385,7 +385,7 @@
 
   * key:valueのペアが安全
 
-  load Users
+  load --table Company
   [
   {"_key": "key1", "column1":"data1", "column2":", ...
 
