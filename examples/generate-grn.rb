@@ -75,7 +75,7 @@ def generate_station_grn
         file.puts("{#{entry}},")
       end
     end
-    file.puts("[")
+    file.puts("]")
   end
 end
 
