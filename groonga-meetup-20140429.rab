@@ -564,7 +564,7 @@
 
 = ストレージモード
 
-  ENGINE=mroonga
+  ENGINE=mroongaと覚えましょう
 
 = ラッパーモード
 
@@ -576,8 +576,11 @@
 
 = ノーマライザーの指定
 
-  FULLTEXT INDEX (content) COMMENT 'parser "TokenMecab", normalizer "NormalizerAuto"'
+  FULLTEXT INDEX (content) COMMENT 'normalizer "NormalizerAuto"'
 
+= パーサー&ノーマライザーの指定
+
+  FULLTEXT INDEX (content) COMMENT 'parser "TokenMecab", normalizer "NormalizerAuto"'
 
 = MATCH AGAINSTとBOOLEAN MODE
 
