@@ -1,5 +1,5 @@
-select Users --output_columns _key,name,age
+select Company --output_columns _key,name,age
 
-delete Users 2
+delete Company 2
 
-select Users --output_columns _key,name,age
+select Company --output_columns _key,name,age

@@ -1,5 +1,5 @@
 select Company --output_columns _key,name,status
 
-delete Company --filter "name == 'JR北海道'"
+delete Company --filter 'status > 0'
 
 select Company --output_columns _key,name,status
