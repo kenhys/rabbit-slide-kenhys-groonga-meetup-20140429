@@ -16,7 +16,7 @@
 = はじめに
 
 * 開催の目的
-* 説明と演習
+* 今回の内容
 * Any Questions？
 
 = 開催の目的(1)
@@ -92,8 +92,7 @@
 
 = Groonga on CentOS
 
-* CentOS 5
-* CentOS 6
+* CentOS 5/6
   * 中国語のトークナイザーは未サポート
 * CentOS 7?
   * まだrcベースらしいのでしばらく先
@@ -101,7 +100,7 @@
 = Groonga on Fedora(1)
 
 * Fedora 20
-  * no TokenFriso
+  * 中国語のトークナイザーは未サポート
   * Groonga公式とFedora公式に違いはない
   * Fedoraでリリースするのはちょっと遅れる(2-3週)
 
@@ -273,21 +272,18 @@
 
 (('&#x23F3;'))(('tag:x-small'))Groongaをインストールしてみましょう
 
-  Debian系% sudo apt-get install groonga-httpd
+  * groonga-httpd
 
-  Red Hat系% sudo yum install groonga-httpd
-
-(('tag:center'))(('tag:x-small'))http://groonga.org/ja/docs/install.html
+  http://groonga.org/ja/docs/install.html
 
 = Install Groonga(2)
 
 (('&#x23F3;'))(('tag:x-small'))トークナイザーやノーマライザーをインストールしてみましょう
 
-  Debian系% sudo apt-get install groonga-tokenizer-mecab groonga-normalizer-mysql
-  
-  Red Hat系% sudo yum install groonga-tokenizer-mecab groonga-normalizer-mysql
+  * groonga-tokenizer-mecab
+  * groonga-normalizer-mysql
 
-(('tag:center'))(('tag:x-small'))http://groonga.org/ja/docs/install.html
+  http://groonga.org/ja/docs/install.html
 
 = Install Groonga(3)
 
@@ -372,7 +368,7 @@
 * 多才なloadコマンド
   * 追加も更新もこれ一つで
 
-= データをより安全にロードする(1)
+= 失敗時にわかりやすいロードの仕方(1)
 
   * こうやってロードできるけど
 
@@ -381,15 +377,15 @@
   ["_key", "column1", "column2", ...
   ["key1",  "data1", "data2", ...
 
-= データをより安全にロードする(2)
+= 失敗時にわかりやすいロードの仕方(2)
 
-  * key:valueのペアが安全
+  * key:valueのペアがわかりやすい
 
   load --table Company
   [
   {"_key": "key1", "column1":"data1", "column2":", ...
 
-= データをより安全にロードする(3)
+= 失敗時にわかりやすいロードの仕方(3)
 
 (('&#x23F3;'))実際に試してみましょう
 
@@ -475,17 +471,23 @@
 
 = HTTP経由でのリクエストの基本
 
+  * コマンド名 + キー=値のペア
+
   http://localhost:10041/d/コマンド名?キー1=値1&キー2=値2....
 
 = HTTP経由でテーブルを作成する(1)
 
-(('&#x23F3;')) % 0005-create-table/create-table.sh
+(('&#x23F3;'))table_createコマンドを使ってアクセス
+
+  % ./0005-create-table/create-table.sh
 
   curl 'http://localhost:10041/d/table_create?name=Company&type=TABLE_PAT_KEY&key_type=UInt32'
 
 = HTTP経由でカラムを作成する(1)
 
-(('&#x23F3;')) % 0006-create-column/create-column.sh
+(('&#x23F3;'))column_createコマンドを使ってアクセス
+
+  % ./0006-create-column/create-column.sh
 
   curl 'http://localhost:10041/d/column_create?table=Company&name=full_name&flags=COLUMN_SCALAR&type=ShortText'
 
@@ -493,13 +495,13 @@
 
 (('&#x23F3;'))POSTでデータをロードしてみましょう
 
-  % 0007-post-data/post-data.sh
+  % ./0007-post-data/post-data.sh
 
 = HTTPでデータを検索する(1)
 
 (('&#x23F3;'))HTTP経由で検索してみましょう
 
-  % 0008-search-http/search-http.sh
+  % ./0008-search-http/search-http.sh
 
 = 管理画面を触ってみよう
 
@@ -507,16 +509,14 @@
 
   http://localhost:10041/
 
-= 位置情報を検索してみよう
-
-= 文字列をトークナイズしてみよう
-
-= 文字列を正規化してみよう
-
-= クエリ展開してみよう
-
-  % sudo cp 00
-
+#= 位置情報を検索してみよう
+#
+#= 文字列をトークナイズしてみよう
+#
+#= 文字列を正規化してみよう
+#
+#= クエリ展開してみよう
+#
 #= 他のプロダクトを活用してみよう
 #
 #* Rroonga
@@ -565,34 +565,45 @@
 
 = ストレージモード
 
-  ENGINE=mroongaと覚えましょう
+  * ENGINE=mroongaと覚えましょう
 
 = ラッパーモード
 
+  * コメントでエンジンを指定
+ 
   ENGINE=mroonga COMMENT='engine "innodb"'
   
 = パーサーの指定
+
+  * コメントでパーサーを指定
+  * Groongaの用語だとトークナイザー
 
   FULLTEXT INDEX (content) COMMENT 'parser "TokenMecab"'
 
 = ノーマライザーの指定
 
+  * コメントでノーマライザーを指定
+
   FULLTEXT INDEX (content) COMMENT 'normalizer "NormalizerAuto"'
 
 = パーサー&ノーマライザーの指定
+
+  * 両方指定したいときは,で区切る
 
   FULLTEXT INDEX (content) COMMENT 'parser "TokenMecab", normalizer "NormalizerAuto"'
 
 = MATCH AGAINSTとBOOLEAN MODE
 
-* QUERY EXPANSION MODE
-  * MySQLにおまかせの類似文書検索
-* BOOLEAN MODE
-  * 明示的に検索を制御
+  * QUERY EXPANSION MODE
+    * MySQLにおまかせの類似文書検索
+  * BOOLEAN MODE
+    * 明示的に検索を制御
 
 = 位置情報検索
 
-(('&#x23F3;'))Qiitaの位置情報検索の記事を試してみよう
+(('&#x23F3;'))(('tag:x-small'))Qiitaの位置情報検索の記事を試してみよう
+
+  http://qiita.com/groonga/items/7abca5004d2ae386d388
 
 = 感謝
 
