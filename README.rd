@@ -2,6 +2,7 @@
 
 2014年4月29日に行われたGroonga meetupで使用したスライドです。
 GroongaやMroongaを初めて触れる人向けに演習を通じて基本をおさえてもらうための資料です。
+今回は主にGroonga中心のサンプルを用意しました。
 
 == For author
 
